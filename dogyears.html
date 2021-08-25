@@ -1,0 +1,80 @@
+<!-- 
+FileName: dogyears.html
+Project: dogyears
+last date updated: 08-24-2021
+Purpose:
+    - dogyears html file.
+
+    - dog years is an app to find an accurate age of your dog
+    in dog years, while taking into account:
+        - their age in human years
+        - their weight
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dog Years Calculator</title>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <main class="main">
+            <div class="container headline">
+
+                <h2>Dog Age Calculator:</h2>
+
+            </div>
+
+            <div class="container">
+
+                <h3>How big is your dog?</h3>
+
+                <!-- ask for the dogs weight -->
+                <div class="select">
+
+                    <select class="size-select" id="size-select">
+                        <option value="0">Select Size</option>
+                        <option value="1">Small (under 20lbs).</option>
+                        <option value="2">Medium (between 20 and 50lbs).</option>
+                        <option value="3">Large (over 50lbs).</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <!-- ask for the dogs age -->
+                <h3>How old is your dog in people years?</h3>
+                <input class="textbox" id="textbox" type="text" placeholder="age in human years">
+
+                </br>
+                <button class="btn calcBtn" id="calcBtn">calculate</button>
+
+            </div>
+
+            <div class="container results">
+
+                <h2>Doggo's Age:</h2>
+                <span id="dogAge">0</span>
+
+            </div>
+
+        </main>
+
+        <!-- javascript -->
+        <script src="app.js"></script>
+
+    </body>
+
+</html>
